@@ -1,0 +1,48 @@
+.parent-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24%;
+}
+
+
+.signup{
+    width: 100%;
+    border: none;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+}
+.signup:hover{
+    cursor: pointer;
+   background-color: black;
+   color: white;
+}
+
+.signin{
+    width: 100%;
+    border: none;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+}
+.signin:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.buttons{
+    gap: 20px;
+    width: 30%;
+
+}

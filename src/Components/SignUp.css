@@ -1,0 +1,54 @@
+.parent-card{
+    width: 500px;
+    height: 500px;
+    margin-top: 10%;
+    margin-left: 32%;
+    border-radius: 10px;
+}
+
+.form input{
+    width: 100%;
+}
+
+.form input,
+.form textarea,
+.form select{
+    padding: 20px;
+    background-color: var(--bg);
+    color: var(--text);
+    border: 2px solid #AEC6CF;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.container{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form button{
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(134, 209, 209);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.form .heading{
+    font-size: 20px;
+    width: 100%;
+    font-family: var(--text);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
