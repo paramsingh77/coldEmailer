@@ -14,7 +14,7 @@ const LoginPage = () => {
             signInWithEmailAndPassword(auth , email , password).then((userCreds) => {
                  const user = userCreds.user;
                  setUser(user);
-                //  navigate('/dashboard')
+                 navigate('/dashboard')
 
             }).catch((err)=>{
                 console.log(err);

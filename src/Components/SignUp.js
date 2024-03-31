@@ -48,9 +48,7 @@ const SignUp = () => {
                 </>
             ) :
             (
-               
-             <div>You are not logged in Yet</div>
-               
+              <></>             
             )
         }  
     </div>

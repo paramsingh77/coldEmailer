@@ -15,6 +15,7 @@
     text-align: center;
     background-color: transparent;
     transition: ease-in-out 0.3s;
+    margin-left: 20px;
 }
 .signup:hover{
     cursor: pointer;
@@ -45,4 +46,8 @@
     gap: 20px;
     width: 30%;
 
+}
+
+.usern{
+    margin-right: 10px;
 }
