@@ -55,7 +55,7 @@ const DashBoard = () => {
     },(error) => {
       console.log(error.text);
     });
-    form.current.reset();
+    e.target.reset();
   };
 
   const handleOnChange = (e) => {
@@ -90,7 +90,7 @@ const DashBoard = () => {
     </div>
 
     <div className='emailBox'>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} enctype="multipart/form-data" method="post">
       <div className='Name'>
       <input  placeholder='name' onChange={(e)=> setName(e.target.value)} name='name' value={name} required/>
       </div>
@@ -98,7 +98,7 @@ const DashBoard = () => {
       <input  placeholder='company' onChange={(e)=> setCompany(e.target.value)} name='company' value={company} required/>
       </div>
       <div className='emailName'>
-      <input  placeholder='email' onChange={(e)=> setEmail(e.target.value)} name='email' value={email} required/>
+      <input  placeholder='email' onChange={(e)=> setEmail(e.target.value)} name='to_email' value={email} required/>
       </div>
       <div className='subject'>
                 <input type='text' onChange={(e)=> setSubject(e.target.value)} value={subject} placeholder='subject' name='text'required/>
@@ -108,7 +108,7 @@ const DashBoard = () => {
               <textarea type='text' value={displayContent} onChange={handleOnChange} name='message' onChange={(e)=> setContent(e.target.value)}  placeholder='enter the content for email' required/>
       </div>
       <div className='file'>
-                <input type='file' onChange={(e)=> {const files = Array.from(e.target.files); setFile(files)}}  id='fileinput' name='fileinput' accept=".jpg , .jpeg , .png , pdf" />
+                <input type='file' onChange={(e)=> {const files = Array.from(e.target.files); setFile(files)}}  id='fileinput' name='mu_file' accept=".jpg , .jpeg , .png , pdf" />
 
       </div>
       <button type="submit">Send</button>
